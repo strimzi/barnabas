@@ -193,6 +193,10 @@ public class SetupClusterOperator {
             this.operationTimeout = operationTimeout;
             return self();
         }
+        public SetupClusterOperatorBuilder withReconciliationInterval(long reconciliationInterval) {
+            this.reconciliationInterval = reconciliationInterval;
+            return self();
+        }
 
         // currently supported only for Bundle installation
         public SetupClusterOperatorBuilder withExtraEnvVars(List<EnvVar> envVars) {
